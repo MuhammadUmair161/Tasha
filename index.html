@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tasha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/extre.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+    <!-- MDB -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet"/> -->
+</head>
+
+<body>
+
+    <div class="container-fluid p-0 m-0">
+
+        <!-- -------------header------------ -->
+
+        <header class="w-100">
+            <div class="bg-white m-0 p-0 sticky-top">
+
+                <div class="nav row myBgEffect mb-2 pl-2 pt-2 mb-1 m-0 boxShadow bg-light">
+                    <!-- --------logo------------ -->
+                    <div class="col-sm-4 p-1">
+                        <label for="" class="text-capitalize fs-5"><img class="rounded-circle pr-2" src="../logo/tasha.png" alt="">TASHA <span class="myColor1">store</span></label>
+                    </div>
+
+                    <!-- ------------navLink------------- -->
+
+                    <div class="hide col-sm-5">
+                        <ul class="pt-2">
+                            <li class="d-inline-block p-2"><a
+                                    class="myColor p-2 text-decoration-none text-capitalize fw-bold"
+                                    href="index.html">home</a></li>
+                            <li class="d-inline-block p-2">
+                                <select id="shop" class="myColor text-capitalize fw-bold border-0 form-contro bt outlineNone bgT"
+                                    name="" id="">
+                                    <option>shop now</option>
+                                    <option><a href="#cookware">cookware</a></option>
+                                    <option><a href="#appliances">appliances</a></option>
+                                </select>
+
+                            </li>
+                            <li class="d-inline-block p-1"><a
+                                    class="myColor p-2 text-decoration-none text-capitalize fw-bold"
+                                    href="pages/about us.html">about us</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="responce col-sm-3 text-end p-2 pt-2 fs-5">
+                        <i onclick="op()" role="button" class="myColor m-2 fa fa-shopping-cart" aria-hidden="true"></i>
+                        <i onclick="opLogin()" role="button" class="myColor fa fa-user-o m-2" aria-hidden="true"></i>
+                        <i onclick="opNav()" role="button" class="myColor fa fa-bars m-2" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ---------------cart----------------- -->
+
+            <div id="cart" class="cart toshort h-100 p-1 bg-light z-1 position-fixed sticky-top">
+                <div class="row border-bottom border-dark p-1 pt-3 m-0">
+
+                    <div class="col-sm-2 border-dark border-end"><span onclick="cl()" class="p-1"><i
+                                class="myColor fs-6 fa fa-times" aria-hidden="true"></i></span></div>
+                    <div class="col-sm-8">
+                        <h5 class="text-capitalize text-center">shopping cart</h5>
+                    </div>
+                    <div class="col-sm-2 border-dark border-start text-center"><span class="pt-2 text-center">0</span>
+                    </div>
+                </div>
+                <span class="position-absolute"><a class="myColorbg  p-2 text-capitalize text-decoration-none"
+                        href="#">shop it now</a></span>
+            </div>
+
+            <!-- ---------------sideNav----------------- -->
+
+            <div id="sideNav" class="toshort cart bg-light z-1 position-fixed sticky-top">
+                <div class="row p-2 m-0">
+
+                    <div class="col-sm-2"><span onclick="clNav()"><i class="myColor fa fa-times p-2"
+                                aria-hidden="true"></i></span></div>
+                    <div class="col-sm-10">
+                        <div class=""><a href="#" class="text-decoration-none myColor fs-6 text-capitalize">logn in/sing
+                                up</a><i class="w-50 fs-4 text-end fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+
+                <div class="row p-2 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <a class="p-2 text-capitalize text-decoration-none text-white" href="#">my acount</a>
+                    </div>
+                </div>
+
+                <div class="row p-2 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <a class="p-2 w-100 text-capitalize text-decoration-none  text-white"
+                            href="index.html"><i class="p-1 fa fa-home" aria-hidden="true"></i>home</a>
+                    </div>
+                </div>
+
+                <div class="row p-2 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <a class="p-2 w-100 text-capitalize text-decoration-none  text-white"
+                            href="#"><i class="p-1 fa fa-archive" aria-hidden="true"></i>my orders</a>
+                    </div>
+                </div>
+
+                <div class="row p-2 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <a class="p-2 text-capitalize text-decoration-none  text-white" href="#"><i
+                                class="p-1 fa fa-reply" aria-hidden="true"></i>my returns</a>
+                    </div>
+                </div>
+
+                <div class="row p-2 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <a class="p-2 text-capitalize text-decoration-none  text-white"
+                            href="pages/contact us .html"><i class="p-1 fa fa-address-book"
+                                aria-hidden="true"></i>contant us</a>
+                    </div>
+                </div>
+
+                <div id="tip" class="row p-2 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <a onclick="opTip()" class="p-2 text-capitalize text-decoration-none  text-white"><i
+                                class="p-1 fa fa-eercast" aria-hidden="true"></i>expert tips</a>
+                    </div>
+                </div>
+
+                <div class="row p-2 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <a class="p-2 text-capitalize text-decoration-none  text-white" href="#"><i
+                                class="p-1 fa fa-file-text-o" aria-hidden="true"></i>policy</a>
+                    </div>
+                </div>
+
+                <div class="row p-2 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <a class="p-2 text-capitalize text-decoration-none  text-white" href="#"><i
+                                class="p-1 fa fa-question-circle-o" aria-hidden="true"></i>help</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ------------------exprtTips-------------------- -->
+            <div id="tips" class="toshort cart bg-light z-1 position-fixed sticky-top">
+                <div class="row p-2 m-0">
+
+                    <div class="col-sm-2"><span onclick="clTips()"><i class="myColor fa fa-times p-2"
+                                aria-hidden="true"></i></span></div>
+                    <div class="col-sm-10">
+                        <div class=""><a href="#" class="text-decoration-none myColor fs-6 text-capitalize">expert tips
+                            </a><i class="w-50 fs-4 text-end fa fa-user-circle-" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+
+                <div class="row p-2 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <li><a class="p-2 text-capitalize text-decoration-none text-white" href="#">create acount</a></li>
+                        <li><a class="p-2 text-capitalize text-decoration-none text-white" href="#">any help</a></li>
+                        <li><a class="p-2 text-capitalize text-decoration-none text-white" href="#">more info</a></li>
+                        <li><a class="p-2 text-capitalize fs-6 text-decoration-none text-white" href="#">contact authorities</a></li>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <!-- ---------------form----------------- -->
+
+            <div id="form" class="cart toshort text-center bg-light z-1 position-fixed sticky-top">
+                <div class="row p-2 m-0">
+
+                    <div class="col-sm-2 text-start"><span onclick="clLogin()"><i class="myColor fa fa-times p-2"
+                                aria-hidden="true"></i></span></div>
+                    <div class="col-sm-10">
+                        <div class=""><a href="#" class="text-decoration-none myColor fs-6 text-capitalize">logn in/sing
+                                up</a><i class="w-50 fs-4 text-end fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+
+                <div class="row p-1 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <tr>
+                            <td><input class="w-100 text-capitalize rounded-pill p-2 m-1 w-100 outlineNone" type="email"
+                                    value="" placeholder="email"></td>
+                        </tr>
+                    </div>
+                </div>
+
+                <div class="row p-1 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <tr>
+                            <td><input class="w-100 text-capitalize rounded-pill p-2 m-1 w-100 outlineNone"
+                                    type="password" value="" placeholder="password"></td>
+                        </tr>
+                    </div>
+                </div>
+
+                <div class="row p-1  myColorbg2 m-0">
+                    <div class="col-sm-12">
+                        <button class="p-1 m-1 myColorbg rounded-pill toshort2 w-25" type="submit">login</button>
+                    </div>
+                </div>
+
+                <div class="row p-2 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <a class="p-2 text-capitalize text-decoration-none  text-white" href="#"
+                            onclick="opForm()">register now</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- ----------------register -->
+            <div id="register" class="cart toshort text-center bg-light z-1 position-fixed sticky-top">
+                <div class="row p-2 m-0">
+
+                    <div class="col-sm-2 text-start"><span onclick="clForm()"><i class="myColor fa fa-times p-2"
+                                aria-hidden="true"></i></span></div>
+                    <div class="col-sm-10">
+                        <div class=""><a href="#" class="text-decoration-none myColor fs-6 text-capitalize">register
+                                now</a><i class="w-50 fs-4 text-end fa fa-user-circle-" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+
+                <div class="row p-1 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <tr>
+                            <td><input class="w-100 text-capitalize rounded-pill p-2 m-1 w-100 outlineNone" type="text"
+                                    value="" placeholder="first name"></td>
+                        </tr>
+                    </div>
+                </div>
+
+                <div class="row p-1 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <tr>
+                            <td><input class="w-100 text-capitalize rounded-pill p-2 m-1 w-100 outlineNone" type="text"
+                                    value="" placeholder="last name"></td>
+                        </tr>
+                    </div>
+                </div>
+
+                <div class="row p-1 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <tr>
+                            <td><input class="w-100 text-capitalize rounded-pill p-2 m-1 w-100 outlineNone" type="email"
+                                    value="" placeholder="email"></td>
+                        </tr>
+                    </div>
+                </div>
+
+                <div class="row p-1 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <tr>
+                            <td><input class="w-100 text-capitalize rounded-pill p-2 m-1 w-100 outlineNone"
+                                    type="password" value="" placeholder="password"></td>
+                        </tr>
+                    </div>
+                </div>
+
+                <div class="row p-1  myColorbg2 m-0">
+                    <div class="col-sm-12">
+                        <button class="p-1 m-1 myColorbg rounded-pill toshort2 w-25" type="submit">submit</button>
+                    </div>
+                </div>
+
+                <div class="row p-2 myColorbg m-0">
+                    <div class="col-sm-12">
+                        <a class="p-2 text-capitalize text-decoration-none  text-white" href="#"
+                            onclick="opLogin()">back to login</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="w-100 h-25 mt-5">bifferDiv</div> -->
+
+            <!-- --------------------slider----------------------------- -->
+
+            <div class="image mt-5 w-100 overflow-hidden">
+                <img class="sliderImg" src="image/product/food storage/lunch box.jpg" alt="true">
+                <img class="sliderImg" src="image/product/food storage/spice jars.jpg" alt="">
+                <img class="sliderImg" src="image/product/cookware/pan/pan (2).jpg" alt="">
+                <img class="sliderImg" src="image/product/appliances/chopper.jpg" alt="">
+                <img class="sliderImg" src="image/product/food storage/spice jar s.jpg" alt="">
+                <img class="sliderImg" src="image/product/cookware/egg poacher.jpg" alt="">
+                <img class="sliderImg" src="image/product/appliances/bleander/bleander.jpg" alt="">
+                <img class="sliderImg" src="image/product/cookware/handi/handi (2).jpg" alt="">
+            </div>
+        </header>
+    </div>
+
+    <!-- --------------------contant--------------------- -->
+
+    <div class="row m-0">
+        <div class="col-sm-12 text-center p-2">
+            <button type="button" id="cookwareBtn"
+                class="outlineNone toshort2 overflow-hidden text-capitalize boxShadow2 w-25 p-2 m-1 fs-4 rounded-pill border-0 myColorbg3">cookware</button>
+            <button type="button" id="applianceBtn"
+                class="text-capitalize toshort2 overflow-hidden outlineNone boxShadow2 w-25 p-2 m-1 fs-4 rounded-pill border-0 myColorbg3">appliances</button>
+        </div>
+    </div>
+
+
+    <section class="m-0 p-0">
+
+        <section id="cookware" class="p-2">
+
+            <section id="chef">
+
+                <div data-aos="fade-up">
+                    <h4 class="p-2 rounded-pill">cookware</h4>
+                    <div class="container p-2">
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/cookware/pots/pots.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/pot.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">pot</span><br><span class="myColor p-1 fs-4">rs
+                                                2500</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/cookware/cookware set/cookware.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/cookwareSet.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">cookware
+                                                set</span><br><span class="myColor p-1 fs-4">rs 9000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/cookware/handi/handi (2).jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/handi.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">handi</span><br><span class="myColor p-1 fs-4">rs
+                                                1200</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/cookware/pan/grill pan.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/grillPan.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">grill
+                                                pan</span><br><span class="myColor p-1 fs-4">rs 1800</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/cookware/pan/pan (2).jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/fryingPan.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">frying
+                                                pan</span><br><span class="myColor p-1 fs-4">rs 900</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx w-75"><img src="image/product/cookware/steamer.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/steamer.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">steamer</span><br><span class="myColor p-1 fs-4">rs
+                                                3000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/cookware/tawa.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/tawa.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">tawa</span><br><span class="myColor p-1 fs-4">rs
+                                                800</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/cookware/egg poacher.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/egg.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">egg
+                                                poachers</span><br><span class="myColor p-1 fs-4">rs 1300</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/cookware/karahi/karahi (1).jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/karahi.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">karahi</span><br><span class="myColor p-1 fs-4">rs
+                                                2000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img
+                                        src="image/product/cookware/pan/c1be455a102fbb9ddb2e4986b72849c8.jpg_340x340q80.jpg_.webp">
+                                </div>
+                                <div class="contentbx">
+                                    <a href="pages/cookingPan.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">cooking
+                                                pan</span><br><span class="myColor p-1 fs-4">rs 800</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/cookware/pots/pots.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/pot.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">pot</span><br><span class="myColor p-1 fs-4">rs
+                                                5000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section id="chef">
+
+                <div data-aos="fade-up">
+                    <h4 class="p-2 rounded-pill">food storage</h4>
+                    <div class="container p-2">
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx w-75"><img src="image/product/food storage/flask.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/flask.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">flask</span><br><span class="myColor p-1 fs-4">rs
+                                                1000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/food storage/lunch box.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/lunch.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">lunch
+                                                box</span><br><span class="myColor p-1 fs-4">rs 3000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/food storage/spice jar s.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/spice.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">spice
+                                                jars</span><br><span class="myColor p-1 fs-4">rs 1500</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/food storage/spice jars.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/jar.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">spice
+                                                jars</span><br><span class="myColor p-1 fs-4">rs 2000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/food storage/storage bags.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/storage.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">storage
+                                                bags</span><br><span class="myColor p-1 fs-4">rs 800</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx w-25"><img src="image/product/food storage/vacumm bottles.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/vacuum.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">vacuum
+                                                bottle</span><br><span class="myColor p-1 fs-4">rs
+                                                1200</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+        <section id="appliances" class="p-2">
+            <section id="chef">
+
+                <div data-aos="fade-up">
+                    <h4 class="p-2 rounded-pill">appliances</h4>
+                    <div class="container p-2">
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/appliances/bleander/bleander.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/bleander.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">bleander</span><br><span class="myColor p-1 fs-4">rs
+                                                6000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/appliances/toaster.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/toaster.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">toaster</span><br><span class="myColor p-1 fs-4">rs
+                                                7000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/appliances/ice.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/ice- cream.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">ice-cream
+                                                maker</span><br><span class="myColor p-1 fs-4">rs 7000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/appliances/food chopper.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/food-choper.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">food
+                                                chopper</span><br><span class="myColor p-1 fs-4">rs 6500</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx w-75"><img src="image/product/appliances/coffee maker.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/cofffee.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">coffee
+                                                maker</span><br><span class="myColor p-1 fs-4">rs 8000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/appliances/chopper.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/chopper.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">chopper</span><br><span class="myColor p-1 fs-4">rs
+                                                5600</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/appliances/electric kettle.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/e-kettle.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">e-kettle</span><br><span class="myColor p-1 fs-4">rs
+                                                3000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/appliances/bread maker.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/bread.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">bread
+                                                maker</span><br><span class="myColor p-1 fs-4">rs 3500</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/appliances/kettler.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/kettle.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">e-
+                                                kettle</span><br><span class="myColor p-1 fs-4">rs 3500</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/appliances/sorbet maker.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/sorbet.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">sorbet
+                                                maker</span><br><span class="myColor p-1 fs-4">rs 3000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx w-75"><img src="image/product/appliances/ice-cream.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/ice.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span class="myColor p-1">ice-cream
+                                                maker</span><br><span class="myColor p-1 fs-4">rs 3000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section id="chef">
+
+                <div data-aos="fade-up">
+                    <h4 class="p-2 rounded-pill">refrigator</h4>
+
+                    <div class="container p-2">
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx"><img src="image/product/refrigator/refrigator1.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/refrigator.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">refrigator</span><br><span
+                                                class="myColor p-1 fs-4">rs
+                                                80000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx w-50"><img src="image/product/refrigator/refrigator.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/refrigatorr.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">refrigator</span><br><span
+                                                class="myColor p-1 fs-4">rs
+                                                120000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx w-75"><img src="image/product/refrigator/61gf8uBCv6L._AC_SL1500_.jpg">
+                                </div>
+                                <div class="contentbx">
+                                    <a href="pages/freezer.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">freezer</span><br><span class="myColor p-1 fs-4">rs
+                                                70000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="imgbx w-75"><img src="image/product/refrigator/r.jpg"></div>
+                                <div class="contentbx">
+                                    <a href="pages/freezerr.html" role="button" class="text-decoration-none">
+                                        <h3 class="p-1 text-center text-capitalize"><span
+                                                class="myColor p-1">freezer</span><br><span class="myColor p-1 fs-4">rs
+                                                60000</span></h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sci">
+                                <li style="--i:1">
+                                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                </li>
+                                <li style="--i:2">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                                </li>
+                                <li style="--i:3">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </section>
+    </div>
+    <!-- -------------------------------------------------- -->
+
+    <!-- --------------------footer-------------------------- -->
+
+    <footer class="mt-5 p-4">
+        <div class="row">
+            <div class="col-sm-2 h-25 w-20">
+                <h3 class="text-capitalize">help</h3>
+                <hr class="w-25">
+                <tr>
+                    <td><a href="#"></a></td>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">search</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">help</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">information</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">privacy policy</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">shopping delails</h6>
+                        </a></td>
+                </tr>
+            </div>
+
+            <div class="col-sm-2 h-25 w-20">
+                <h3 class="text-capitalize ">information</h3>
+                <hr class="w-75">
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">search terms</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">advanced search</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">store info</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">store location</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">orders & returns</h6>
+                        </a></td>
+                </tr>
+            </div>
+
+            <div class="col-sm-2 h-25 w-20">
+                <h3 class="text-capitalize ">support</h3>
+                <hr class="w-50">
+                <tr>
+                    <td><a class="text-decoration-none" href="pages/contact us .html">
+                            <h6 role="button" class="myColor p-2 text-capitalize">contant us</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="pages/about us.html">
+                            <h6 role="button" class="myColor p-2 text-capitalize">about us</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">careers</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">refunds & returns</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize">deliveries</h6>
+                        </a></td>
+                </tr>
+            </div>
+            <div class="col-sm-3 h-25 w-20">
+                <h3 class="text-capitalize ">follow us</h3>
+                <hr class="w-25">
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize"><i class="p-1 fa fa-phone"
+                                    aria-hidden="true"></i>(+92) 10-698-6355</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize"><i class="p-1 fa fa-phone"
+                                    aria-hidden="true"></i>(120) 966-5626</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize"><i class="p-1 fa fa-envelope"
+                                    aria-hidden="true"></i>tashastores@gmail.com</h6>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><a class="text-decoration-none" href="#">
+                            <h6 role="button" class="myColor p-2 text-capitalize"><i class="p-1 fa fa-location-arrow"
+                                    aria-hidden="true"></i>1020 steet 66</h6>
+                        </a></td>
+                </tr>
+            </div>
+            
+            <div class="col-sm-3 h-25 w-25">
+                <h3 class="text-capitalize ">feldback</h3>
+                <hr class="w-50">
+                <tr>
+                    <td><input class="outlineNone p-2 text-capitalize text-decoration-none border-0" type="text"
+                        placeholder="write"><button class="myColorbg p-2 text-light border-0" role="button"
+                        type="button">send</button></td>
+                    </tr>
+                    <h4 class="text-capitalize mt-1 ">register complain</h4>
+                    <hr class="w-75">
+                <tr>
+                    <td><input class="outlineNone p-2 text-capitalize text-decoration-none border-0" type="text"
+                            placeholder="write"><button class="myColorbg p-2 text-light border-0" role="button"
+                            type="button">send</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h6 class="p-2 text-capitalize">responce in 24 hour</h6>
+                    </td>
+                </tr>
+            </div>
+        </div>
+
+        <div class="row">
+            <hr class="w-100 p-0">
+
+            <div class="col-4 m-0 p-2"><label for="" class="m-1"><img class="rounded-circle pr-2" src="../logo/tasha.png"alt=""></label></div>
+            <div class="col-4 m-0 p-2 text-center">
+                <i class="m-1 p-2 myColor fa fa-facebook-official fs-3" aria-hidden="true"></i>
+                <i class="m-1 p-2 myColor fa fa-twitter fs-3" aria-hidden="true"></i>
+                <i class="m-1 p-2 myColor fa fa-instagram fs-3" aria-hidden="true"></i>
+            </div>
+            <div class="col-4 m-0 pt-4 p-2 text-center">&copy;copy right 2021 
+                <span class="text-dark border-start border-dark pl-2 border-en pr-2 fw-bold">Tasha store</span>
+                <span class="text-dark border-start border-dark pl-2 border-en pr-2 fw-bold">Muhammad Umair</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ----------------scripts------------------- -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- MDB
+  <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script> -->
+    <script src="js/extra.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+body{
+    min-width: 100%;
+}
+
+label img{
+    height: 50px;
+    width: 60px;
+}
+header{
+    height:--vh;
+}
+
+/* #shop{
+
+} */
+
+.bgT{
+    background: transparent;
+}
+
+.product{
+    min-height: 80vh;
+    padding-top:1% ;
+    padding-bottom:1% ;
+}
+
+.nav{
+    height: 10%;
+    padding: 3px;
+}
+
+.z-1{
+    z-index: 1;
+}
+
+
+.r-0{
+    right: 0%;
+}
+
+.d-none{
+    display: none;
+}
+
+/* -------------spoppingCart---------------------- */
+
+.cart{
+    top: 0;
+    right: 0;
+    display: none;
+    position: absolute;
+}
+
+.cart span{
+    top: 50%;
+    right: 30%;
+}
+
+.div-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+/* -----------------slider-------------------------- */
+.sliderImg{
+    outline: none;
+    height: 25%;
+    width: 25%;
+}
+.Img{
+    outline: none;
+    height: 100%;
+    width: 90%;
+}
+
+.boxShadow{
+    box-shadow: 0px 10px 25px rgb(227, 141, 30,0.5);
+}
+
+.boxShadow2{
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------------------- */
+.myBgEffect{
+  background-color:rgb(0, 0, 0,0.08);  
+}
+.myBgEffect2{
+  background-color: rgb(227, 141, 30,0.5);  
+}
+
+/* -----------------footer---------- */
+
+footer{
+    background-color: rgba(230, 218, 218, 0.892);
+}
+
+.myColor1{
+    color: rgb(227, 141, 30);
+}
+
+.myColor{
+    color: black;
+}
+.myColor:hover{
+    color:rgb(227, 141, 30);
+}
+
+.myColorbg2{
+    background-color:rgb(227, 141, 30);
+    color: #ffff;
+}
+
+.myColorbg{
+    background-color:black;
+    color: #ffff;
+}
+.myColorbg:hover{
+    background-color:rgb(237, 147, 29);
+    color: #ffff;
+}
+
+.myColorbg3{
+    color:black;
+    background-color: #ffff;
+}
+.myColorbg3:hover{
+    background-color:rgb(237, 147, 29);
+    color: #ffff;
+}
+
+/* --------------------imgEffect--------------*/
+.imgeffect:hover{
+    transform: scale(1.05);
+    transition: 1.05s ease-out;
+    opacity: rgb(107, 103, 103);
+}
+
+/* -----------------------------contantForm------------------- */
+.contantForm{
+    height: 70vh;
+}
+
+.outlineNone{
+    outline: none;
+}
+
+
+/* -----------------contant------------------------------------------- */
+
+#chef{
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#chef h4{
+    text-transform: capitalize;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+    font-size: 1.8em;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container .card{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 260px;
+    height: 370px;
+    margin: 10px;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.container .card .content{
+    opacity: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    transform: translateY(-20px);
+}
+
+.container .card .content .imgbx{
+    height: 250px;
+    width: 90%;
+    position: relative;
+}
+
+.container .card .content .imgbx img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.container .card .sci{
+    padding-top: 35%;
+    position: absolute;
+    display: flex;
+    right: 8%;
+}
+
+.container .card .sci li{
+    list-style: none;
+    margin: 30px 15px;
+    transform: translateX(50px);
+    transition: 0.5s;
+    transition-delay:calc(0.1s * var(--i));
+    opacity: 0;
+}
+
+.container .card .sci:hover li{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .sci li a{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+
+.container .card .sci li a:hover{
+    color: rgb(227, 141, 30);
+}
+
+/* ---------------------@media-----------------  */
+
+@media(max-width: 880px){
+ .hide{
+     display: none;
+    }
+ .responce{
+     position: absolute;
+     top: 0;
+     right: 0;
+    }
+        
+    .responces{
+       min-width:  100%;
+    }
+
+}
+@media(min-width: 880px){
+ .show{
+     display: none;
+    }
+}
+@media(max-width: 500px){
+ .toshort{
+    width: 100%;
+    }
+    .toshort2{
+        min-width: 40%;
+    }
+}
+@media(min-width: 500px){
+ .toshort{
+    width: 25%;
+    }
+}
+/* ---------------scrollup------------------ */
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    background-image: url(../image/top.png);
+    height: 40px;
+    width: 40px;
+    /* padding: 10px 20px;
+    background-color: #555;
+    color: #fff; */
+}
